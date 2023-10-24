@@ -1,5 +1,11 @@
 def create_favorite_hash(color, number)
   # return a hash with the following key/value pairs:
+  hash = {
+    color: color,
+    number: number
+  }
+  return hash
+
   # key of color (as a symbol) with value of the color argument
   # key of number (as a symbol) with the value of the number argument
 end

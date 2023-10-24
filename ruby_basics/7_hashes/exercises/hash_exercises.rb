@@ -11,6 +11,8 @@ def create_favorite_hash(color, number)
 end
 
 def favorite_color(favorite_list)
+
+  return favorite_list[:color]
   # return the value of the color key
 end
 

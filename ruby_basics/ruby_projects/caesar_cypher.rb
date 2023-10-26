@@ -1,11 +1,12 @@
 
 
-puts "What is the string to shuffle"
-string_to_shuffle = gets.chomp
-puts "Great! we'll shuffle that string. \n What's the shift you want to make?"
-shift_num = gets.chomp.to_i
 
-def caesar_cipher(string,shift)
+
+def caesar_cipher()
+  puts "What is the string to shuffle"
+  string_to_shuffle = gets.chomp
+  puts "Great! we'll shuffle that string. \n What's the shift you want to make?"
+  shift_num = gets.chomp.to_i
   cypher_index = ('a'..'z').to_a
   cypher_caps = cypher_index.map { |a| a.upcase  }
   encrypted_array = []

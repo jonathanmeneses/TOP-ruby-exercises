@@ -15,4 +15,5 @@ def stock_picker(array)
   return best_days
 end
 
-p stock_picker([1,2,3,9,5,6,7,8])
+
+p stock_picker([7,12,7,7,17,9,14,12,])

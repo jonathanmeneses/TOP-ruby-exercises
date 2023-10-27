@@ -1,3 +1,5 @@
+# frozen_string_literal: false
+
 # Bubble Sorting
 # 1. Take in an array
 # 2. Start with first value
@@ -10,7 +12,7 @@
 
 def bubble_sort(array)
   sorted_array = []
-  while array.length > 0
+  until array.empty?
     array.each_with_index do |item, index|
       next unless index + 1 < array.length
 

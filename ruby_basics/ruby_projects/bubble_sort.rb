@@ -10,23 +10,19 @@
 
 def bubble_sort(array)
   sorted_array = []
-  while array.length > 0 do
+  while array.length > 0
     array.each_with_index do |item, index|
-      if index+1 < array.length
-        if item > array[index+1]
-          array[index], array[index + 1] = array[index + 1], array[index]
-        end
-      end
+      next unless index + 1 < array.length
 
+      array[index], array[index + 1] = array[index + 1], array[index] if item > array[index + 1]
     end
-    item_to_add = array.pop()
+    item_to_add = array.pop
     sorted_array.unshift(item_to_add)
 
   end
-  return sorted_array
+  sorted_array
 end
 
-
-array_to_sort = [5,2,7,6, 1,9,3,4,8]
+array_to_sort = [5, 2, 7, 6, 1, 9, 3, 4, 8]
 
 p bubble_sort(array_to_sort)

@@ -37,11 +37,3 @@ class CaesarCipher
   end
 
 end
-
-
-
-cipher = CaesarCipher.new
-
-message, shift = cipher.grab_input
-
-p "The shuffled message is #{cipher.translate(message, shift)}"
